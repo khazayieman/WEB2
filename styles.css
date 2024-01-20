@@ -1,0 +1,125 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    text-align: center;
+    background-color: rgb(179, 215, 224);
+}
+
+h1 {
+    color: rgb(7, 50, 170);
+}
+
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+    flex-basis: calc(50% - 20px);
+    background-color: rgb(156, 157, 216);
+    border: 2px solid #313131;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    margin-top: 20px;
+}
+
+.p {
+    color: #313131;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.study-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.study-table th, .study-table td {
+    border: 1px solid #313131; 
+    padding: 8px;
+    text-align: center;
+}
+
+.hr {
+    margin: 20px 0;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: cream;
+    min-height: 100vh;
+    border: 2px solid #313131; 
+    text-align: center; 
+}
+
+.bg a {
+    color: rgb(10, 10, 197);
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .page-content {
+        flex-direction: column;
+    }
+
+    .grid,
+    .bg {
+        flex-basis: 100%;
+    }
+
+    .bg {
+        background-color: cream;
+    }
+}
+@media (min-width: 481px) and (max-width: 1200px) {
+    .page-content {
+        flex-direction: column;
+    }
+
+    .grid,
+    .bg {
+        flex-basis: 100%;
+    }
+
+    .bg {
+        background-color: cream;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .grid,
+    .bg {
+        flex-basis: 48%;
+    }
+
+    .bg {
+        background-color: cream;
+    }
+}
+
+@media (min-width: 1601px) {
+    .grid
+    .bg {
+        flex-basis: 48%;
+    }
+    .bg {
+        background-color: cream;
+    }
+}
